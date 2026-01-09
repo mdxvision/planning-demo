@@ -1,6 +1,22 @@
 # Planning with Files
 
-Manus-style file-based planning templates for Claude Code.
+Manus-style file-based planning templates for Claude Code and other AI assistants.
+
+## Quick Start
+
+```bash
+# Clone this repo
+git clone https://github.com/mdxvision/planning-demo.git
+
+# Initialize planning files in any project
+cd your-project
+../planning-demo/scripts/init.sh
+```
+
+This creates three files in your project:
+- `task_plan.md` - Track phases and progress
+- `findings.md` - Store research and discoveries
+- `progress.md` - Log session actions and test results
 
 ## The Pattern
 
@@ -19,9 +35,9 @@ Filesystem = Disk (persistent, unlimited)
 | `findings.md` | Research, discoveries | After ANY discovery |
 | `progress.md` | Session log, test results | Throughout session |
 
-## Usage
+## Examples
 
-Copy these templates to any project directory when starting complex multi-step tasks.
+See the [examples/](examples/) folder for filled-out planning files showing how to use this system on a real project (building user authentication).
 
 ## When to Use
 
@@ -35,6 +51,13 @@ Copy these templates to any project directory when starting complex multi-step t
 - Simple questions
 - Single-file edits
 - Quick lookups
+
+## Critical Rules
+
+1. **Create plan first** - Never start complex work without `task_plan.md`
+2. **Read before decide** - Re-read the plan before major decisions
+3. **Update after act** - Mark phases complete, log errors
+4. **Never repeat failures** - Track what you tried, mutate the approach
 
 ## Source
 
