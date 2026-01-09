@@ -15,7 +15,7 @@
 - [x] Created examples/ folder with 3 sample filled-out files
 - [x] Added .gitignore
 - [x] Updated README with installation instructions
-- [ ] Commit and push
+- [x] Commit and push
 
 ### Test Results
 | Test | Expected | Actual | Status |
